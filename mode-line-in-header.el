@@ -61,7 +61,7 @@ current buffer."
             mode-line-format   nil)
     (setq mode-line-format header-line-format
           header-line-format nil))
-  (set-window-buffer nil (current-buffer)))
+  (force-mode-line-update))
 
 ;;;###autoload
 (define-globalized-minor-mode
