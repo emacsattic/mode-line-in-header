@@ -49,9 +49,9 @@
   :lighter " mode-header"
   :global nil
   :group 'editing-basics
-  (if (not header-line-format)
+  (if mode-line-in-header
       (setq header-line-format mode-line-format
-            mode-line-format   nil)
+            mode-line-format nil)
     (setq mode-line-format header-line-format
           header-line-format nil))
   (force-mode-line-update))
