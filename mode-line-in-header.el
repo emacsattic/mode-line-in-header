@@ -42,13 +42,6 @@
 
 ;;; Code:
 
-(defcustom header-line-format nil
-  "Analog to `mode-line-format', contains a string, symbol, or
-list describing the mode line to display in the header of the
-current buffer."
-  :type 'string
-  :group 'editing-basics)
-
 ;;;###autoload
 (define-minor-mode mode-line-in-header
   "Minor mode to display the mode line in the header of the current buffer."
