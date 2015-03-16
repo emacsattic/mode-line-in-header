@@ -20,13 +20,21 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
+;;; Contributors:
+
+;; This mode was inspired by Bastien Guerry
+;; [[http://bzg.fr/emacs-strip-tease.html][#Emacs, naked]].
+
+;; Eric Crosson -- https://github.com/EricCrosson
+;;      created initial package
+
+;; Lars Tveito -- https://github.com/larstvei
+;;      globalized minor mode
+
 ;;; Commentary:
 
 ;; This minor mode displays the mode line in the header of the current
 ;; buffer.
-
-;; This mode is simply a cleaned up version of one of the snippets on
-;; [[http://bzg.fr/emacs-strip-tease.html][#Emacs, naked]].
 
 ;;; Usage:
 
