@@ -1,4 +1,4 @@
-# mode-line-in-header
+# mode-line-in-header ![Build status](https://travis-ci.org/EricCrosson/mode-line-in-header.svg)
 
 Display the mode-line in the header of the current window.
 
