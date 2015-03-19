@@ -39,8 +39,17 @@
 ;;; Usage:
 
 ;; (mode-line-in-header 1)
+;;   - or -
+;; M-x mode-line-in-header
+
+;; to activate the global minor mode, do one of the above with the
+;; 'global-' prefix on the mode name.
 
 ;;; Code:
+
+(defgroup mode-line nil
+  "Mode line and mode line transformations."
+  :group 'editing-basics)
 
 ;;;###autoload
 (define-minor-mode mode-line-in-header
@@ -48,7 +57,7 @@
   :init-value nil
   :lighter " mode-header"
   :global nil
-  :group 'editing-basics
+  :group 'mode-line
   (if mode-line-in-header
       (setq header-line-format mode-line-format
             mode-line-format nil)
@@ -60,7 +69,8 @@
 (define-globalized-minor-mode
   global-mode-line-in-header
   mode-line-in-header
-  (lambda () (mode-line-in-header 1)))
+  (lambda () (mode-line-in-header 1))
+  :group 'mode-line)
 
 (provide 'mode-line-in-header)
 
